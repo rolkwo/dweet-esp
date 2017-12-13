@@ -2,6 +2,7 @@
 #define THIG_NAME  "Your_thing_neme_here"  // Put here your thing name
 #define WIFISSID "ssid"
 #define PASSWORD "password"
+#define KEY "analog"
 
 dweet client;
 
@@ -13,6 +14,6 @@ void setup() {
 
 void loop() {
     // specifies the args of type "String"
-    String value = client.getDweet(THIG_NAME, key);
+    String value = client.getDweet(THIG_NAME, KEY);
     Serial.println(value);
 }
